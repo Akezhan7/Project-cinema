@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import '_nullStyle';
+@import '_header';
+@import '_footer';
+
+body {
+    background-color:#0E1214;
+    height: 100%;
+}
+
+
+
+
+.main {
+    padding-top: 70px;
+    &__row {
+    }
+
+    &__item {
+    }
+}
+.container {
+}
+.collections {
+    display: flex;
+    // justify-content: center;
+    &__logo {
+        position: relative;
+        &:hover {
+            .collections__logo-text {
+                display: block;
+                &:hover {
+                a {
+                    transition: 0.5s;
+                    color:#0ac8f2;
+                }
+                }
+                
+            }
+        }
+    }
+
+    &__tabcontent {
+        position: absolute;
+        top: 500px;
+        left: 500px;
+        background-color:#0d060984;
+        border-radius:30px;
+        // max-width:700px;
+        p {
+            padding: 30px;
+            font-size: 18px;
+            &:nth-child(1) {
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+    &__logo-text {
+        margin-top: 300px;
+        text-align: center;
+        display:none;
+        transition: 0.5s;
+        a {
+            font-size: 50px;
+            font-weight: 800;
+            color:white;
+        }
+    }
+
+    &__tab {
+        display: flex;
+        flex-direction: column;
+        background-color:#fafbfcf8;
+        color:black;
+        // border-radius:10px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        // justify-content: center;
+        align-items: center;
+    }
+}
+.tab {
+    &__link {
+        width:390px;
+       text-align: center;
+       padding: 30px 30px;
+    }
+
+    &__nav {
+        font-size: 16px;
+        padding-bottom:30px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            color:#fa0d9e;
+        }
+
+    }
+    &__title {
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+.tab__nav-active {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.title {
+    // padding-left: 80px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-weight: 700;
+}
+%bgitem {
+    width: 1000px;
+    height:700px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    // box-shadow: inset 0px 0px 200px 100px #04080d7b;
+    transition: 0.5s;
+    background-size:cover;
+    &:hover {
+        box-shadow: inset 0px 0px 10px 2000px #04080d7b;
+    }
+}
+.a {
+    background-color:#0d060984;
+    margin-top: 80px;
+}
+.b {
+    background-color:#0d060984;
+}
+.c {
+    background-color:#0d060984;
+    margin-top: 50px;
+}
+.g {
+    background-color:#0d060984;
+    margin-top: 50px;
+}
+.d {
+    background-color:#0d060984;
+    margin-top: 100px;
+}
+.la {
+    background:url(/img/logo/qCk1up.jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.ll {
+    background:url(/img/logo/nc-snapshot1538383380874.jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.lb {
+    background:url(/img/logo/big_74553_the-impossible-5188554467c1a.jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.lc {
+    background:url(/img/logo/Pennywise-IT-2017-horror-movies-хоррор-фильмы-ужасы.jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.lg {
+    background:url(/img/logo/1932x1208_878716_[www.ArtFile.ru].jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.ld {
+    background:url(/img/logo/tv-series-the-walking-dead-79504.jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.l1 {
+    background:url(/img/logo/jahudeju.jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.l2 {
+    background:url(/img/logo/m2_09450_novyy-razmer.jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.l3 {
+    background:url(/img/logo/b0cde8b7-ae92-46be-822e-b5a42d13cf9b-last_christmas.webp)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.l4 {
+    background:url(/img/logo/1920x1200_676107_[www.ArtFile.ru].jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.l5 {
+    background:url(/img/logo/tomjerry.jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.l6 {
+    background:url(/img/logo/2560x1600_254843_[www.ArtFile.ru].jpg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+.l7 {
+    background:url(/img/logo/aca58f12d88502007509c16a0008c5fd.jpeg)no-repeat;
+    @extend %bgitem;
+    background-size:cover;
+}
+
+%bglast {
+	width:280px;
+	height:380px;
+	transition: 0.3s;
+	// border-radius:0px;
+	margin: 20px;
+		&:hover {
+			position: relative;
+			box-shadow:1px -160px 74px -50px rgba(0,0,0,0.83)inset;
+			.popular__name-bg {
+				transform: translateY(-30px);
+			}
+		}
+}
+.latest {
+margin-top: 100px;
+    &__row {
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__movies {
+    }
+
+    &__navig {
+        margin-top: 120px;
+        width: 300px;
+    }
+
+
+    &__serial {
+    }
+.serial {
+
+		&__title {
+            margin-top: 50px;
+		}
+
+		&__date {
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 20px;
+           
+		}
+
+		&__column {
+		}
+
+		&__block {
+            margin-top: 20px;
+            display: flex;
+            border: 1px solid #0E1214;
+            border-radius:10px;
+            transition: 0.5s;
+            &:hover {
+                border: 1px solid #fa0d9e;
+            }
+            font-weight: 500;
+		}
+
+		&__logo {
+            img {
+                width:150px;
+                height: 200px;
+                background-size:cover;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                
+            }
+		}
+
+		&__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color:#27292bf8;
+            width: 400px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding-left: 10px;
+            font-size: 15px;
+		}
+
+		&__name {
+            color:greenyellow;
+            margin-bottom: 10px;
+		}
+
+		&__season {
+		}
+}
+
+
+    &__body {
+    }
+
+    &__search {
+    }
+
+    &__form {
+    }
+
+    &__inp {
+        margin-top: 10px;
+        width: 300px;
+        background-color:#27292bf8;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+        color:#fa0d9e;
+        border: 2px solid #27292bf8;
+        &:hover {
+            border: 2px solid #fa0d9e;
+        }
+    }
+
+    .genblock {
+        width:300px;
+        // text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 25px;
+        background-color:#27292bf8;
+        font-weight: 600;
+    }
+    &__genre {
+        margin-top: 40px;
+    }
+.service {
+
+		&__list {
+		}
+
+		&__accordion {
+            position: relative;
+            background: none;
+            color: #444;
+            cursor: pointer;
+            padding-top: 20px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.9s;
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            &:after {
+                content: '\02795';
+                font-size: 13px;
+                color: #777;
+                float: right;
+                margin-left: 5px;
+            }
+		}
+
+		&__panel {
+            display: none;
+		}
+}
+.panel {
+		&__item {
+		}
+
+		&__text {
+            // padding-left: 10px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            a {
+                color: white;
+                cursor: pointer;
+                font-size: 15px;
+                margin: 0 0 10px 0;
+                transition: 0.5s;
+                &:hover {
+                    color:#fa0d9e;
+                    padding-left: 5px;
+                }
+            }
+		}
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  .active:after {
+    content: "\2796";
+  }
+
+}
+
+
+.container {
+}
+.movies {
+
+    &__column {
+        display: flex;
+		width:100%;
+		overflow: hidden;
+		position: relative;
+    }
+    &__field {
+        display: flex;
+        flex-wrap: wrap;
+        // width: 960px;
+    }
+
+}
+.hit__number {
+    display: flex;
+    position: absolute;	
+    top:1250px;
+    z-index: 50;
+    left: 350px;
+    text-align: center;
+}
+    .hit__number-block {
+        width:15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color:white;
+        margin: 10px;
+        cursor: pointer;
+    }
+.popular {
+
+    &__block {
+        // display: flex;  
+        // flex: 0 1 100%;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name-bg {
+        transition: 0.3s;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-size: 16px;
+		padding-bottom: 10px;
+		// font-weight: 200;
+		font-family: 'Roboto', sans-serif;
+    }
+    &__body {
+        // display: flex;
+    }
+
+    &__time {
+        font-family: 'Roboto', sans-serif;
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		justify-content: center;
+		font-size: 16px;
+		background:url(/img/icons/construction_project_plan_building_architect_design_develop-52_icon-icons.com_60223.png)no-repeat;
+		width:30px;
+		height:30px;
+		background-size:cover;
+		// margin-right: 30px;
+		
+		p{
+			padding-left: 40px;
+			width:200px;
+		}
+    }
+}
+.p1 {
+    background:url(/img/logo/new/265425b83c2d662694afdf8cab3fa914.jpeg);
+    @extend %bglast;
+    background-size:100% 100%;
+}
+.p2 {
+    background:url(/img/logo/new/x8X7UB.jpg);
+    @extend %bglast;
+    background-size:100% 100%;
+}
+.p3 {
+    background:url(/img/logo/new/betmen-2021-poster-v.5.jpg);
+    @extend %bglast;
+    background-size:100% 100%;
+}
+.p4 {
+    background:url(/img/logo/new/D3nNe-9WkAA_aCj.jpg);
+    @extend %bglast;
+    background-size:100% 100%;
+}
+.p5 {
+    background:url(/img/logo/new/torrent-rehmpejdzh-2018-film-v-luchshem-kachestve-full-hd-1080p.jpg);
+    @extend %bglast;
+    background-size:100% 100%;
+}
+.p6 {
+    background:url(/img/logo/new/vanda-vizhn-serial.jpg);
+    @extend %bglast;
+    background-size:100% 100%;
+}
+.logo-play-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+.logo-play-g {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-play {
+    background: url(/img/icons/icons8-play-в-круге-50.png) no-repeat;
+    background-size:cover;
+	width:48px;
+	height:48px;
+}
+
+.newpopular {
+    margin-top: -550px;
+    &__title {
+    }
+
+
+    &__btn {
+        width:960px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__btn-left {
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &__btn-right {
+        img {
+            cursor: pointer;
+        }
+    }
+
+
+    &__item {
+        // width:100%;
+		overflow: hidden;
+        width:960px;
+		position: relative;
+
+    }
+
+    &__field {
+        display: flex;
+        // flex-wrap: wrap;
+        transition: all 0.9s;
+    }
+    &__body {
+        // display: flex;
+       
+    }
+    &__column {
+        display: flex;
+    }
+
+    &__block {
+  
+    }
+    &__block-logo {
+       
+    }
+
+    &__play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        // background-color:hotpink;
+        &-body {
+            display:flex;
+            a {
+                background:url(/img/icons/icons8-play-в-круге-50.png);
+                width:40px;
+                height: 40px;
+                background-size:cover;
+            }
+        }
+    }
+
+    &__text {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display:flex;
+        align-items: flex-end;
+        padding:20px;
+        justify-content: space-between;
+        transition: 0.5s;
+        font-size: 15px;
+        font-weight: 600;
+        &:hover {
+            margin-top: -20px;
+        }
+        &-body {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__like {
+    }
+    &__name {
+    }
+
+    &__gentime {
+    }
+
+    &__time {   
+    }
+}
+%bgBlock {
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+    width:460px;
+    height:280px;
+    transition: 0.5s;
+    &:hover {
+        position: relative;
+        box-shadow:1px -160px 74px -50px rgba(0,0,0,0.83)inset;
+    } 
+}
+.block1 {
+    background: url(/img/logo/ono-pennivaiz-kloun-kosplei-uzhas.jpg);
+    background-size:cover;  
+    @extend %bgBlock;
+}
+.block2 {
+    // overflow: hidden;
+    background: url(/img/logo/2560x1600_254843_[www.ArtFile.ru].jpg);
+    background-size:cover;  
+    @extend %bgBlock;
+}
+.block3 {
+    // overflow: hidden;
+    background: url(/img/logo/1932x1208_878716_[www.ArtFile.ru].jpg);
+    background-size:cover;  
+    @extend %bgBlock;
+}
+.block4 {
+    // overflow: hidden;
+    background: url(/img/logo/a9b9eff4d9ba313341a604bee220b422.jpg);
+    background-size:cover;  
+    @extend %bgBlock;
+}
+.block5 {
+    // overflow: hidden;
+    background: url(/img/logo/aca58f12d88502007509c16a0008c5fd.jpeg);
+    background-size:cover;  
+    @extend %bgBlock;
+}
+.block6 {
+    // overflow: hidden;
+    background: url(/img/logo/Dwayne_Johnson_Horses_Jumanji_New_level_Kevin_Hart_587795_3840x2160.jpg);
+    background-size:cover;  
+    @extend %bgBlock;
+}
+.block7 {
+    // overflow: hidden;
+    background: url(/img/logo/layer_38_copy_272.png);
+    background-size:cover;  
+    @extend %bgBlock; 
+}
+.block8 {
+    // overflow: hidden;
+    background: url(/img/logo/maxresdefault_live.jpg);
+    background-size:cover;  
+    @extend %bgBlock; 
+}
+.date {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}

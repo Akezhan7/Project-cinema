@@ -1,0 +1,120 @@
+.general {
+	color:white;
+	font-family: 'Raleway', sans-serif;
+}
+.show {
+	display: block;
+}
+.hidden {
+	display: none;
+}
+.header {
+	// width: 100%;
+	// position: fixed;
+	// z-index: 150;
+	&__row {
+	}
+
+	&__item {
+		padding-top: 40px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		img {
+			width: 98px;
+			height: 90px;
+		}
+	}
+
+	&__img {
+	}
+
+	&__name {
+		p {display: inline-block;}
+		p {
+			font-size: 26px;
+			
+			font-weight: 700;
+			
+			// &:nth-child(1):hover:after {
+			// 	transition: 0.3s;
+			// 	content:'kezhan';
+			// }
+			&:nth-child(2):hover:after {
+				transition: 0.3s;
+				content:'aduov';
+			}
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+	}
+
+	&__nav {
+
+		a {
+			transition: 0.3s;
+			padding-right: 30px;
+			font-size: 16px;
+			// line-height: 25px;
+			color:white;
+			font-weight: 600;
+			&:nth-child(1) {
+				color:#fa0d9e;
+			}
+			&:hover {
+				color:#fa0d9e;
+			}
+		}
+	}
+
+	&__search {
+		text-decoration: none;
+		display: flex;
+		width: 140px;
+		height: 45px;
+		line-height: 45px;
+		border-radius: 45px;
+		margin: 10px 20px;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 3px;
+		font-weight: 600;
+		background: #fa0d9e;
+		box-shadow: 0 9px 20px #e314c18f;
+		color: white;
+		transition: .3s;
+		padding-left: 20px;
+		&:hover {
+			background: #5614e3;
+			box-shadow: 0 9px 20px #5614e398;
+			color: white;
+			transform: translateY(-7px);
+		}
+	}
+
+	&__topic {
+	}
+}
+.container {
+	max-width: 1400px;
+	// width: 100%;
+	margin: 0 auto;
+}
+.search {
+
+	&__logo {
+		margin: 6px 0 0 10px;
+		background: url(/img/icons/icons8-поиск-52.png);
+		width:28px;
+		height: 28px; 
+		background-size:cover;
+	}
+}

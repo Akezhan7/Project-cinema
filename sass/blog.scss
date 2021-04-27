@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import '_nullStyle';
+@import '_header';
+@import '_footer';
+
+body {
+    background-color:#0E1214;
+    color:white;
+}
+.title {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
+    margin-bottom: 50px;
+}
+
+.main {
+margin-top: 50px;
+    &__row {
+    }
+
+    &__item {
+    }
+
+    &__column {
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    &__img {
+      
+        img {
+            width:900px;
+            height: 500px;
+            background-size: cover;
+            border-radius: 20px;
+        }
+    }
+
+    &__date {
+        margin:10px 0;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        justify-content: center;
+        img {
+            width:30px;
+            height: 30px;
+            background-size:cover;
+            margin-right: 10px;
+        }
+       .date {
+           opacity: 0.6;
+           font-family: 'Montserrat', sans-serif;
+       }
+    }
+    &__subtitle {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    &__text {
+        margin-top: 10px;
+        opacity: 0.6;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    &__info {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        
+        img {
+            width:25px;
+            height: 25px;
+            background-size:cover;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        span {
+            margin-right: 10px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+
+    &__nav {
+        margin-top: 50px;
+    }
+.nav {
+    display: flex;
+    justify-content: center;
+		&__prev {
+		}
+
+		&__num {
+            border: 2px solid white;
+            padding: 10px;
+            width:50px;
+            text-align: center;
+            margin: 0 5px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-weight: 700;
+            &:hover {
+                color:#d50082;
+                border: 2px solid #d50082;
+            }
+		}
+
+		&__next {
+		}
+}
+.nav-btn {
+    margin: 0 10px;
+    background: none;
+    border: 2px solid white;
+    padding: 10px;
+    color:white;
+    width:100px;
+    transition: 0.3s;
+    &:hover {
+        color:#d50082;
+        border: 2px solid #d50082;
+    }
+}
+.active-num {
+    color:#d50082;
+    border: 2px solid #d50082;
+}
+
+}
+.container {
+}
+

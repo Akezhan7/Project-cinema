@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import '_nullStyle';
+@import '_header';
+@import '_footer';
+
+body {
+	background-color:#0E1214;
+}
+.status {
+    font-size: 18px;
+    color:yellowgreen;
+    text-align: center;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+.reg {
+ input {
+     width:500px;
+     height: 50px;
+     border-radius: 5px;
+     background:none;
+     border-bottom: 2px solid white;
+     color:#d50082;
+     transition: 0.3s;
+     &:hover {
+        border-bottom: 2px solid #d50082;
+     }
+ }
+    &__row {
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    &__vh {
+        padding-top: 50px;
+    }
+
+    &__title {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 26px;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+
+    &__block {
+    }
+
+    &__reg {
+        padding-top: 50px;
+    }
+}
+.container {
+}
+.gen {
+    display: flex;
+    justify-content: center;
+}
+.vh-1 {
+    // width:100px;
+    background: none;
+    color: white;
+    font-size: 40px;
+    transition: 0.3s;
+    &:hover {
+        color:#d50082;
+    }
+}
+.raz {
+    font-size: 50px;
+    padding: 0 10px;
+}
+.reg-1 {
+    // width:100px;
+    background: none;
+    color: white;
+    font-size: 40px;
+    transition: 0.3s;
+    &:hover {
+       color:#d50082;
+    }
+}
+.form {
+
+    &__cont {
+    }
+
+    &__email {
+    }
+
+    &__social-reg {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__social-icon {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        img {
+            width:50px;
+            height: 50px;
+            background-size:cover;
+            margin-right: 20px;
+        }
+    }
+}
+.inp {
+}
+.check {
+    padding-top: 20px;
+    input {
+        width:12px;
+        height: 12px;
+    }
+    &::after {
+        content:'Запомнить меня';
+        margin-left:10px;
+    }
+    
+}
+.btn {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    button {
+        background-color:#0E1214;
+        width:160px;
+        height:30px;
+        color: white;
+        display: flex;
+        align-items: center;
+        border: 2px solid white;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: 0.3s;
+        font-size: 13px;
+        cursor: pointer;
+            &:hover {
+                border: 2px solid #d50082;
+                color: #d50082;
+                box-shadow: 0 9px 20px #d50082;
+                .reg__logo {
+                    margin-left: 10px;
+                    background:url(/img/icons/icons8-вход-red.png);
+                        width:30px;
+                        height:30px;
+                        background-size:cover;
+                }
+            }
+    }
+}
+.social {
+
+    &__nav {
+
+    }
+}
+.form2 {
+
+    &__cont {
+    }
+
+    &__name {
+    }
+
+    &__lastname {
+    }
+
+    &__email {
+    }
+
+    &__tel {
+    }
+
+    &__social-reg {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__social-icon {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        img {
+            width:50px;
+            height: 50px;
+            background-size:cover;
+            margin-right: 20px;
+        }
+    }
+}
+
+.suc {
+}
+.otv {
+    img {
+        width:400px;
+        height: 400px;
+        background-size:cover;
+    }
+		&__text {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 500;
+           .green {
+                margin-top: -50px;
+               color:lightgreen
+           }
+           .red {
+               color:indianred;
+           }
+            
+		}
+}
+.fal {
+}
+
+.oval {
+    // display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+
+

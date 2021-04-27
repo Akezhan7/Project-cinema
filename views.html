@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Верстка</title>
+        <link rel="stylesheet" href="css/views.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='https://css.gg/play-button-o.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="general">
+
+            <header class="header">
+                <div class="container">
+                    <div class="header__row">
+                        <div class="header__item">
+                            <div class="header__logo">
+                                <div class="header__img">
+                                    <img src="/img/photo/AS.png" alt="film">
+                                </div>
+                                <div class="header__name">
+                                   <p>A</p> <p>S</p> <p>Cinema</p>
+                                </div>
+                            </div>
+                            <div class="header__link">
+                                <div class="header__nav">
+                                    <a href="index.html">Домой</a>
+                                    <a href="genre.html">Жанры</a>
+                                    <a href="by.html">Купить</a>
+                                    <a href="#">Просмотры</a>
+                                    <a href="blog.html">Блоги</a>
+                                    <a href="contact.html">Контакты</a>
+                                </div>
+                                <button class="header__search">
+                                    <div class="search">
+                                       <span>Поиск</span> 
+                                    </div>
+                                    <div class="search__logo">
+                                    </div>
+                                </button>
+                                <div class="header__topic">
+                                    <img src="/img/icons/if-weather-3-2682848_90785.png" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="views">
+                <div class="container">
+                    <div class="views__row">
+                        <div class="logo">
+                            <img src="/img/photo/check_icon.png" alt="">
+                        </div>
+                        <div class="views__item">          
+                            <div class="views__views">
+                                <div class="views__title">
+                                    <p>Просмотренные фильмы</p>
+                                </div>
+                                <div class="views__link">
+                                    <ul class="ul-nav">
+                                        <li class="views__nav">Логан
+                                            <div class="delete"></div>
+                                        </li>
+                                        <li class="views__nav">Лига Справедливости
+                                            <div class="delete"></div>
+                                        </li>
+                                        <li class="views__nav">Мстители
+                                            <div class="delete"></div>
+                                        </li>
+                                        <li class="views__nav">Железный человек
+                                            <div class="delete"></div>
+                                        </li>
+                                        <li class="views__nav">Тор
+                                            <div class="delete"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="views__add">
+                                <div class="views__add-title">
+                                    <p>Добавить новый фильм</p>
+                                </div>
+                                <div class="views__add-text">
+                                    <p>Введите название фильма</p>
+                                </div>
+                                <form class="add" action="#" method="GET" enctype="multipart/form-data">
+                                    <div class="inp">
+                                        <input class="input" placeholder="Что уже просмотрено?" type="text" name="nameFilms" id="">
+                                    </div>
+                                    <div class="views__love">
+                                        <p>Сделать его любимым?</p>
+                                    </div>
+                                    <div class="check">
+                                        <input class="checkbox" type="checkbox">
+                                    </div>
+                                    <div class="btn">
+                                        <button type="submit">Подтвердить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-search hidden">
+                <div class="modal__row">
+                    <div class="modal__item">
+                        <form class="modal__form" action="#">
+                            <div class="modal__close "></div>
+                            <div class="title">Поиск</div>
+                            <input required placeholder="поиск" name="search" type="text" class="modal__input">
+                            <div class="modal__text">
+                                <a href="#" class="modal__link">Триллер</a>
+                                <a href="#" class="modal__link">Фэнтези</a>
+                                <a href="#" class="modal__link">Ужасы</a>
+                                <a href="#" class="modal__link">Комедии</a>
+                                <a href="#" class="modal__link">Экшен</a>
+                                <a href="#" class="modal__link">Романтика</a>
+                                <a href="#" class="modal__link">Телесериалы</a>
+                                <a href="#" class="modal__link">Семейные</a>
+                                <a href="#" class="modal__link">Приключения</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__item">
+                            <div class="footer__body">
+                                <div class="footer__column">
+                                    <div class="footer__column-logo">
+                                        <img src="/img/logo/Block/10747.jpg" alt="">
+                                    </div>
+                                    <div class="footer__column-title">Смотреть</div>
+                                    <div class="footer__column-nav">
+                                        <a href="genre.html" class="footer__column-link">Фильмы</a>
+                                        <a href="genre.html" class="footer__column-link">Сериалы</a>
+                                        <a href="genre.html" class="footer__column-link">Мультфильмы</a>
+                                        <a href="genre.html" class="footer__column-link">Аниме</a>
+                                    </div>
+                                </div>
+                                <div class="footer__column">
+                                    <div class="footer__column-logo">
+                                        <img src="/img/logo/maxresdefault_live.jpg" alt="">
+                                    </div>
+                                    <div class="footer__column-title">Информация</div>
+                                    <div class="footer__column-nav">
+                                        <a href="index.html" class="footer__column-link">Домой</a>
+                                        <a href="genre.html" class="footer__column-link">Жанры</a>
+                                        <a href="by.html" class="footer__column-link">Купить</a>
+                                        <a href="#" class="footer__column-link">Просмотры</a>
+                                        <a href="blog.html" class="footer__column-link">Блоги</a>
+                                        <a href="contact.html" class="footer__column-link">Контакты</a>
+                                    </div>
+                                </div>
+                                <div class="footer__column">
+                                    <div class="footer__column-logo">
+                                        <img src="/img/logo/kanada.jpg" alt="">
+                                    </div>
+                                    <div class="footer__column-title">Локации</div>
+                                    <div class="footer__column-nav">
+                                        <a href="#" class="footer__column-link">Канада</a>
+                                        <a href="#" class="footer__column-link">Казахстан</a>
+                                        <a href="#" class="footer__column-link">Россия</a>
+                                        <a href="#" class="footer__column-link">США</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__info">
+                                <div class="footer__info-text">
+                                    <span>© 2021 AS Cinema | Разработал Садуов Акежан </span>
+                                </div>
+                                <div class="footer__info-nav">
+                                    <img src="/img/icons/block/icons8-facebook-24.png" alt="">
+                                    <img src="/img/icons/block/icons8-twitter-в-квадрате-50.png" alt="">
+                                    <img src="/img/icons/block/icons8-гугл-плюс-24.png" alt="">
+                                    <img src="/img/icons/block/icons8-instagram-50.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="/js/views.js"></script>
+    </body>
+
+</html>

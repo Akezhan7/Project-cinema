@@ -1,0 +1,1230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import '_nullStyle';
+@import '_header';
+@import '_footer';
+
+body {
+	background-color:#0E1214;
+}
+
+.hit {
+	padding-top: 30px;
+	&__container {
+	}
+
+	&__row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// width:2500px;
+	}
+
+
+
+	&__item {
+		display: flex;
+		width:100%;
+		overflow: hidden;
+		position: relative;
+	}
+	&__field {
+		display: flex;
+		transition: all 0.9s;
+	}
+	&__click {
+		position: absolute;
+		margin: 50px;
+		transition: 0.3s;
+		z-index: 100;
+		img {
+			width: 70px;
+			height: 70px;
+			background-size:cover;
+		}
+		&:hover {
+			cursor: pointer;
+			opacity: 0.5;
+
+		}
+		&:nth-child(1) {
+			margin-right: 1760px;
+		}
+		
+	}
+	.next {
+		margin-left: 1750px;
+	}
+
+	&__number {
+		display: flex;
+		position: absolute;	
+		top:550px;
+		z-index: 50;
+		left: 850px;
+		text-align: center;
+	}
+
+	&__number-block {
+		width:15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color:white;
+		margin: 10px;
+		cursor: pointer;
+	}
+
+
+%blockItem {
+	box-shadow: inset 0px 0px 200px 100px #04080d7b;
+	border-radius: 20px;
+	padding-left: 50px;
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	margin: 15px;
+}
+	&__block {
+		background:url(/img/logo/scale_1200.webp) no-repeat;
+		background-size:cover;
+		@extend %blockItem;
+		transition: 0.9s;
+	}
+	&__block2 {
+		background:url(/img/logo/Fantasy_War_in_the_Joker_086458_.jpg) no-repeat;
+		background-size:cover;
+		@extend %blockItem;
+		transition: 0.9s;
+	}
+	&__block3 {
+		background:url(/img/logo/ono-pennivaiz-kloun-kosplei-uzhas.jpg) no-repeat;
+		background-size:cover;
+		@extend %blockItem;
+		transition: 0.9s;
+	}
+	&__block4 {
+		background:url(/img/logo/1920x1200_676107_[www.ArtFile.ru].jpg) no-repeat;
+		background-size:cover;
+		@extend %blockItem;
+		transition: 0.9s;
+	}
+	&__block5 {
+		background:url(/img/logo/2560x1600_254843_[www.ArtFile.ru].jpg) no-repeat;
+		background-size:cover;
+		@extend %blockItem;
+		transition: 0.9s;
+	}
+
+	&__title {
+		padding-top: 50px;
+		font-size: 26px;
+		font-weight: 700;
+		cursor:default;
+	}
+
+	&__subtitle {
+		padding-top: 30px;
+		font-size: 16px;
+		color:lightgrey;
+		cursor:default;
+	}
+
+	&__trailer {
+		padding-top: 30px;
+		display: flex;
+		align-items: center;
+	}
+	&__trailer-img {
+		background:url(/img/icons/ic_play_arrow_128_28560.png)no-repeat;
+		width:35px;
+		height:35px;
+		background-size:cover;
+	}
+
+	&__trailer-logo {
+		width:50px;
+		height: 50px;
+		background-color:white;
+		border-radius:50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__trailer-text {
+		padding-left: 20px;
+		font-size: 16px;
+		font-weight: 700;
+		cursor:default;
+	}
+}
+
+.sub {
+	padding-top: 50px;
+	&__row {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__text {
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		position: relative;
+		padding: 15px 30px;
+		border: 1px solid;
+		border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+		border-image-slice: 1;
+		margin: 10px 20px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		overflow: hidden;
+		letter-spacing: 2px;
+		transition: .8s cubic-bezier(.165, .84, .44, 1);
+		background-color:#0E1214;
+		width: 300px;
+		font-size: 30px;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 0;
+			width: 100%;
+			z-index: -1;
+			color: white;
+			background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+			transition: .8s cubic-bezier(.165, .84, .44, 1);
+		}
+		&:hover {
+			background: rgba(255, 255, 255, 0);
+		}
+		&:hover:hover::before {
+			bottom: 0%;
+			top: auto;
+			height: 100%;
+		}
+	}
+}
+
+
+
+%bgitem {
+	width:250px;
+	height:290px;
+	transition: 0.3s;
+	// border-radius:0px;
+	margin: 20px;
+		&:hover {
+			position: relative;
+			box-shadow:1px -160px 74px -50px rgba(0,0,0,0.83)inset;
+			.popular__name-bg {
+				transform: translateY(-30px);
+			}
+		}
+}
+.popular {
+	padding-top: 90px;
+	margin-bottom: 100px;
+	&__container {
+		max-width: 1288px;
+		margin: 0 auto	;
+	}
+	&__row {
+	}
+
+	&__item {
+		display: flex;
+		
+	}
+	&__column {
+		display: flex;
+		justify-content:center;
+		flex-wrap: wrap;
+	}
+
+	&__block {
+		justify-content: center;
+		align-items: center;
+		flex: 0 1 25%;
+		// border: 1px solid white;
+		// padding-right: 71px;
+		// padding-bottom: 40px;
+		&:nth-child(4) {
+			padding-right: 0;
+		}
+		&:nth-child(8) {
+			padding-right: 0;
+		}
+		
+	}
+
+
+	&__allshow {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	&__show {
+		font-size: 20px;
+		font-weight: 800;
+		color:#d50082;
+		cursor: pointer;
+		border-bottom: 2px solid #0E1214;
+		&:hover {
+			border-bottom: 2px solid #d50082;
+		}
+	}
+
+
+	&__logo {
+		display: flex;
+		flex-direction: column;
+		// justify-content: center;
+		&.l1 {
+			background:url(/img/logo/Block/Avanger.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l2 {
+			background:url(/img/logo/Block/3f1e03e0-e921-11e6-ad66-8f26c293554f.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l3 {
+			background:url(/img/logo/Block/1920x1080_1518257_[www.ArtFile.ru].jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l4 {
+			background:url(/img/logo/Block/10747.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l5 {
+			background:url(/img/logo/Block/scale_1200.webp);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l6 {
+			background:url(/img/logo/Block/wonder-woman-1.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l7 {
+			background:url(/img/logo/Block/b9L8rq0B3NQJBr5IEf1VRk56Kvj.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l8 {
+			background:url(/img/logo/Block/big_startfilmru1405085.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l9 {
+			background:url(/img/logo/Block/10747.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l10 {
+			background:url(/img/logo/a9b9eff4d9ba313341a604bee220b422.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l11 {
+			background:url(/img/logo/klan_kallenov_1920x1200.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+		&.l12 {
+			background:url(/img/logo/Dwayne_Johnson_Horses_Jumanji_New_level_Kevin_Hart_587795_3840x2160.jpg);
+			@extend %bgitem;
+			background-size:100% 100%;
+		}
+	}
+
+	&__name {
+		font-size: 16px;
+		padding-bottom: 10px;
+		// font-weight: 200;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	&__time { 
+		font-family: 'Roboto', sans-serif;
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		justify-content: center;
+		font-size: 16px;
+		background:url(/img/icons/construction_project_plan_building_architect_design_develop-52_icon-icons.com_60223.png)no-repeat;
+		width:30px;
+		height:30px;
+		background-size:cover;
+		// margin-right: 30px;
+		
+		p{
+			padding-left: 40px;
+			width:200px;
+		}
+		
+		
+	}
+}
+.container {
+}
+.title {
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-weight: 700;
+}
+.logo-play-bg {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex: 1 1 auto;
+}
+.logo-play-g {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	// background-color:white;
+	width: 70px;
+	height:70px;
+	border-radius:50%;
+	transition: 0.3s;
+	&:hover {
+		width: 90px;
+		height:90px;
+		.logo-play {
+			width:68px;
+			height:68px;
+		}
+	}
+}
+.popular__name-bg {
+	display: flex;
+	// flex-wrap: wrap;
+	flex-direction: column;
+	// align-items: center;
+	justify-content: center;
+	padding-left: 20px;
+	transition: 0.3s;
+	// box-shadow: inset 0px 0px 0px 0px #000305a2;
+}
+.logo-play {
+	background: url(/img/icons/icons8-play-в-круге-100.png);
+	width:48px;
+	height:48px;
+	background-size:cover;
+	transition: 0.3s;
+}
+
+%bgFilms {
+	width:200px;
+	height: 250px;
+	&:hover {
+		position: relative;
+		box-shadow:1px -160px 74px -50px rgba(0,0,0,0.83)inset;
+		.popular__name-bg {
+			transform: translateY(-30px);
+		}
+	}
+}
+.newfilms {
+margin-bottom: 100px;
+	&__container {
+		max-width: 1260px;
+		margin: 0 auto;
+	}
+	&__row {
+	}
+
+	&__item {
+		overflow: hidden;
+	}
+
+	&__column {
+		display: flex;
+		transition: all 0.9s;
+		// justify-content: center;
+	}
+	&__body {
+		display: flex;
+	}
+	&__body-item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__block {
+		margin-right: 35px;
+		// display: flex;
+		// flex-direction: column;
+		// flex: 0 1 50%;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		padding-top: 20px;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		padding-top: 10px;
+		color:#f2f5f772;
+		font-weight: 500;
+		line-height: 20px;
+	}
+
+	&__watch {
+		padding-top: 10px;
+	}
+
+	&__watch-btn {
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		width:200px;
+		height: 30px;
+		padding: 20px;
+		font-size: 16px;
+		font-weight: 600;
+		border-radius: 5px;
+		background:none;
+		border: 2px solid #08827a;
+		color:#08827a;
+		transition: .5s;
+		&:hover {
+			background-color:#08827a;
+			color:white;
+		}
+	}
+}
+.container {
+}
+.title {
+}
+.popular {
+
+	&__logo {
+	}
+
+	&__name-bg {
+	}
+
+	&__name {
+	}
+
+}
+.newfilms__time {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	justify-content: center;
+	font-size: 13px;
+	background:url(/img/icons/construction_project_plan_building_architect_design_develop-52_icon-icons.com_60223.png)no-repeat;
+	width:30px;
+	height:30px;
+	background-size:cover;
+	// margin-right: 30px;
+	
+	p{
+		padding-left: 40px;
+		width:200px;
+	}
+}	
+.n1 {
+	background:url('/img/logo/new/800x800.jfif');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n2 {
+	background:url('/img/logo/new/vanda-vizhn-serial.jpg');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n3 {
+	background:url('/img/logo/new/betmen-2021-poster-v.5.jpg');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n4 {
+	background:url('/img/logo/new/1606963812_915812.jpg');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n5 {
+	background:url('/img/logo/new/godzillavskingkong_20.png');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n6 {
+	background:url('/img/logo/new/265425b83c2d662694afdf8cab3fa914.jpeg');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n7 {
+	background:url('/img/logo/new/maxresdefault.jpg');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n8 {
+	background:url('/img/logo/new/torrent-rehmpejdzh-2018-film-v-luchshem-kachestve-full-hd-1080p.jpg');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n9 {
+	background:url('/img/logo/new/D3nNe-9WkAA_aCj.jpg');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.n10 {
+	background:url('/img/logo/new/scale_1200.jfif');
+	@extend %bgFilms;
+	background-size:100% 100%;
+}
+.logo-play-bg {
+}
+.logo-play-g {
+}
+.logo-play {
+}
+
+
+.slidefilms {
+
+	&__container {
+	}
+
+	&__row {
+	}
+
+	&__item {
+		display: flex;
+		width:100%;
+		overflow: hidden;
+		position: relative;
+	}
+	&__field {
+		display: flex;
+		transition: all 0.9s;
+	}
+
+	&__body {
+	}
+
+	&__number {
+		position: absolute;
+		top: 150px;
+		left: 80%;
+	}
+
+	&__number-block {
+		justify-content: center;
+		width:15px;
+		height: 15px;
+		margin: 10px;
+		border-radius: 50%;
+		background-color:white;
+	}
+
+
+
+	.b1 {
+		background:url(/img/logo/new/big_startfilmru1281694.jpg);		
+		// width:100%;
+		height: 400px;
+		background-size:100%;	
+		padding-top: 100px;
+		padding-left: 130px;
+		// box-shadow:1px -160px 74px -50px rgba(0,0,0,0.83)inset;
+		flex-direction: column;
+		}
+	.b2 {
+		background:url(/img/logo/new/The-Guardians-of-the-Galaxy.jpg);		
+		width:100%;
+		height: 400px;
+		background-size:100%;	
+		padding-top: 100px;
+		padding-left: 130px;
+		// box-shadow:1px -160px 74px -50px rgba(0,0,0,0.83)inset;
+		flex-direction: column;
+		}
+	.b3 {
+		background:url(/img/logo/new/25D5F.jpg);		
+		width:100%;
+		height: 400px;
+		background-size:100%;	
+		padding-top: 100px;
+		padding-left: 130px;
+		// box-shadow:1px -160px 74px -50px rgba(0,0,0,0.83)inset;
+		flex-direction: column;
+		}
+	&__body-genre {
+		background-color:gold;
+		width:100px;
+		padding: 10px;
+		text-align: center;
+		font-weight: 900;	
+		border-radius: 10px;
+	}
+
+	&__body-name {
+		font-size: 30px;
+		font-weight: 600;
+		padding-top: 5px;
+	}
+
+	&__body-data {
+		display: flex;
+		font-size: 17px;
+		opacity: 0.9;
+		padding-top: 15px;
+	}
+
+	&__body-data-year {
+		margin-right: 10px;
+	}
+
+	&__body-data-genre {
+		margin-right: 10px;
+	}
+
+	&__body-data-time {
+	}
+
+	&__body-play {
+		padding-top: 25px;
+		font-size: 20px;
+		font-weight: 600;
+		display: flex;
+		align-items:center;
+	}
+
+	&__body-play-logo {
+		background:url(/img/icons/icons8-play-в-круге-50.png);
+		width:50px;
+		height: 50px;
+		background-size:cover;
+		margin-right: 10px;
+	}
+
+	&__body-play-watch {
+	}
+}
+
+
+.timers {
+	display: flex;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	&__block {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// background-color:white;
+		border: 1px solid #d50082;
+		width: 250px;
+		height:150px;
+		color:white;
+		margin-right: 50px;
+		border-radius:20px;
+
+		.font {
+			font-size: 105px;
+			padding-bottom: 10px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+	&__title {
+		margin-top: 100px;
+	}
+	
+}
+.container {
+}
+.promotion {
+
+	&__timers {
+	}
+}
+.title {
+	text-align:center;
+}
+
+.modal-search {
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+	
+    background-color:rgba(0,0,0,0.82);
+}
+.modal {
+
+		&__row {
+			max-width: 500px;
+       		margin: 300px auto;
+		}
+
+		&__item {
+			
+		}
+
+		&__form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
+		&__close {
+			background:url(/img/icons/icons8-макос-закрыть-64.png) no-repeat;
+			width:50px;
+			height:50px;
+			background-size:cover;
+			cursor: pointer;
+			margin-left: 700px;
+			
+		}
+
+		&__input {
+			width:500px;
+			padding: 20px;
+			font-size: 25px;
+			margin-bottom: 50px;
+			border-radius:20px;
+		}
+
+		&__text {
+			width:800px;
+			height:100%;
+			text-align: center;
+			
+		}
+
+		&__link {
+			font-size: 25px;
+			color:white;
+			text-transform: uppercase;
+			margin-right: 20px;
+			font-weight: 500;
+			&:hover {
+				border-bottom: 2px solid white;
+			}
+			
+		}
+}
+
+.stock {
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.82);
+	&__row {
+		max-width: 1200px;
+       	margin: 200px auto;
+	}
+	&__close {
+		background:url(/img/icons/icons8-макос-закрыть-64.png) no-repeat;
+			width:50px;
+			height:50px;
+			background-size:cover;
+			cursor: pointer;
+			margin-left: 1100px;
+	}
+	&__item {
+		display: flex;
+	}
+
+	&__left {
+	}
+
+	&__logo {
+		img {
+			width: 800px;
+			height:500px;
+			border-radius:20px;
+		}
+	}
+
+	&__right {
+		color:white;
+		padding-left: 50px;
+	}
+
+	&__title {
+		font-size: 50px;
+		font-weight: 600;
+		padding-bottom: 20px;
+		color:#d50082;
+	}
+
+	&__subtitle {
+		font-size: 30px;
+		font-weight: 500;
+		padding-bottom: 20px;
+		color:yellow;
+	}
+
+	&__text {
+		font-size: 30px;
+		font-weight: 500;
+		padding-bottom: 20px;
+		color:#d50082;
+	}
+
+	&__block {
+	}
+
+	&__btn {
+		text-decoration: none;
+		color: white;
+		display: inline-block;
+		position: relative;
+		padding: 15px 30px;
+		border: 1px solid;
+		border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50083);
+		border-image-slice: 1;
+		margin: 10px 20px;
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		overflow: hidden;
+		letter-spacing: 2px;
+		transition: .8s cubic-bezier(.165, .84, .44, 1);
+		background-color:#0E1214;
+		width: 200px;
+		font-size: 20px;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 0;
+			width: 100%;
+			z-index: -1;
+			color: white;
+			background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+			transition: .8s cubic-bezier(.165, .84, .44, 1);
+		}
+		&:hover {
+			background: rgba(255, 255, 255, 0);
+		}
+		&:hover:hover::before {
+			bottom: 0%;
+			top: auto;
+			height: 100%;
+		}
+	}
+}
+
+.block-reg {
+	background-color:#0E1214;
+	width:160px;
+	height:30px;
+	color: white;
+	display: flex;
+	align-items: center;
+	border: 2px solid white;
+	justify-content: center;
+	padding: 20px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: 0.3s;
+	font-size: 13px;
+	cursor: pointer;
+		&:hover {
+			border: 2px solid #d50082;
+			color: #d50082;
+			box-shadow: 0 9px 20px #d50082;
+			transform: translateY(-7px);
+			// margin-top: -12px;
+			.reg__logo {
+				margin-left: 10px;
+				background:url(/img/icons/icons8-вход-red.png);
+					width:30px;
+					height:30px;
+					background-size:cover;
+			}
+		}
+}
+.reg {
+
+		&__logo {
+			transition: 0.3s;
+			margin-left: 10px;
+			background:url(/img/icons/icons8-вход-в-систему\,-в-кружке\,-стрелка-вправо-64.png);
+				width:30px;
+				height:30px;
+				background-size:cover;
+		}
+}
+
+.mov {
+margin-top: 150px;
+	&__row {
+	}
+
+	&__item {
+	}
+
+	&__blocks {
+		display: flex;
+		margin-left: 90px;
+	}
+
+	&__blocks-block {
+		cursor: pointer;
+		transition: 0.5s;
+		margin-right: 30px;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		font-size: 15px;
+		font-weight: 600;
+		width:230px;
+		height: 50px;
+		background-color:white;
+		color:black;
+	}
+
+	// .cl1 {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	justify-content: center;
+	// }
+	// .cl2 {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	justify-content: center;
+	// }
+	// .cl3 {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	justify-content: center;
+	// }
+	&__column {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		transition: 0.9s;
+	}
+
+	&__column-body {
+		background-color:#27292bf8;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		// align-items: center;
+		justify-content: center;
+		width:200px;
+	}
+
+	&__column-body-lang {
+		margin-bottom: 10px;
+		opacity: 0.8;
+		font-size: 15px;
+		font-weight: 600;
+	}
+
+	&__column-body-name {
+		margin-bottom: 10px;
+		font-size: 20px;
+		font-size: 900;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	&__column-body-time {
+		display: flex;
+		align-items: center;
+	}
+}
+.container {
+}
+.column {
+
+	&__block {
+		position: relative;
+		display: flex;
+		border: 2px solid #0E1214;
+		flex: 0 1 20%;
+		margin: 20px;
+		border-radius: 15px;
+		transition: 0.5s;
+		&:hover {
+			border: 2px solid #d50082;
+		}
+	}
+
+	&__block-img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__block-playlogo {
+		background:url(/img/icons/icons8-play-в-круге-160.png);
+		height: 50px;
+		width: 50px;
+		background-size:cover;
+	}
+}
+.body-time-logo {
+	img {
+		opacity: 0.8;
+		width:20px;
+		height:20px;
+		background-size:cover;
+	}
+}
+.body-time-hours {
+	opacity: 0.8;
+	font-size: 15px;
+}
+.body-time-ser {
+	position:absolute;
+	left: 330px;
+	img {
+		width:20px;
+		height: 20px;
+		background-size:cover;
+	}
+}
+
+%bgmovies {
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	height: 230px;
+	width:180px;
+	box-shadow: inset 0px 0px 200px 100px #04080d7b;
+}
+.m1 {
+	background: url(/img/logo/movies/big_54138_thor2521cefc46adce.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m2 {
+	background: url(/img/logo/movies/0_09ybT-w_8rZxWOYG.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m3 {
+	background: url(/img/logo/movies/1622170-1122099.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m4 {
+	background: url(/img/logo/movies/57715034.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m5 {
+	background: url(/img/logo/movies/big_00842433.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m6 {
+	background: url(/img/logo/movies/big_82093_iron-man-3-c10ddeeb.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m7 {
+	background: url(/img/logo/movies/big_startfilmru1296954.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m8 {
+	background: url(/img/logo/movies/big_startfilmru1339247.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m9 {
+	background: url(/img/logo/movies//big_0084858.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m-1 {
+	background: url(/img/logo/1118371-download-free-tom-jerry-wallpapers-1920x1080-samsung-galaxy.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m-2 {
+	background: url(/img/logo/4050f05d71acd2c71c5184387d03da51.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m-3 {
+	background: url(/img/logo/2560x1600_254843_[www.ArtFile.ru].jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m-4 {
+	background: url(/img/logo/a9b9eff4d9ba313341a604bee220b422.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m-5 {
+	background: url(/img/logo/movies//big_0084858.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m-6 {
+	background: url(/img/logo/big_74553_the-impossible-5188554467c1a.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+
+.m11 {
+	background: url(/img/logo/Dwayne_Johnson_Horses_Jumanji_New_level_Kevin_Hart_587795_3840x2160.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m12 {
+	background: url(/img/logo/tv-series-the-walking-dead-79504.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m13 {
+	background: url(/img/logo/new/big_startfilmru1281694.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m14 {
+	background: url(/img/logo/new/265425b83c2d662694afdf8cab3fa914.jpeg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m15 {
+	background: url(/img/logo/new/25D5F.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+.m16 {
+	background: url(/img/logo/new/vanda-vizhn-serial.jpg);	
+	@extend %bgmovies;
+	background-size: cover;
+}
+
+.mov-active {
+	background-color:#d50082;
+	color:white;
+}
